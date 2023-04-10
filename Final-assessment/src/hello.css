@@ -1,0 +1,69 @@
+/* Reset styles for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Basic styles for the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  /* Styling for the main content area */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .card {
+    margin: 10px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card h2 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  .card p {
+    margin: 10px;
+  }
+  /* Styles for the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }

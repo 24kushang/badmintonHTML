@@ -1,0 +1,131 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 60%;
+    /* display: center; */
+    align-content: center;
+    text-align: justify;
+}
+
+/* Set the container element to position:relative */
+.container {
+    position: relative;
+}
+
+/* Set the background image and opacity */
+.container:after {
+    content: "";
+    background-image: url("./images/watermark.jpg");
+    /* Replace with your image file */
+    opacity: 0.3;
+    /* Adjust the opacity as needed */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 10%;
+
+}
+
+/* CSS for navbar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Set the title style */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    /* color: #fff; */
+    text-align: center;
+    /* background-color: #007bff; */
+    /* padding: 1em; */
+}
+
+p{
+    width: 80%;
+    margin-left: 6em;
+}
+
+#aside-1 {
+    width: 80%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: left;
+    box-shadow: inset 8px 0 0 -5px #f16d1c;
+    font-style: italic;
+    color: #58e07c;
+    background-color: darkgreen;
+}
+
+mark{
+    background-color: aquamarine;
+}
+
+form {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
